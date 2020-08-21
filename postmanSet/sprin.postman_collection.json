@@ -1,0 +1,495 @@
+{
+	"info": {
+		"_postman_id": "83b0c0ad-f6e8-4282-833f-287a6aa388cd",
+		"name": "sprin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Posting Logs",
+			"item": [
+				{
+					"name": "Provided Sample",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "asdf",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "username",
+								"value": "\"asdf\"",
+								"type": "text"
+							},
+							{
+								"key": "password",
+								"value": "\"pass\"",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userId\": \"ABC123XYZ\",\r\n  \"sessionId\": \"XYZ456ABC\",\r\n  \"actions\": [\r\n    {\r\n      \"time\": \"2018-10-18T21:37:28-06:00\",\r\n      \"type\": \"CLICK\",\r\n      \"properties\": {\r\n        \"locationX\": 52,\r\n        \"locationY\": 11\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2018-10-18T21:37:30-06:00\",\r\n      \"type\": \"VIEW\",\r\n      \"properties\": {\r\n        \"viewedId\": \"FDJKLHSLD\"\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2018-10-18T21:37:30-06:00\",\r\n      \"type\": \"NAVIGATE\",\r\n      \"properties\": {\r\n        \"pageFrom\": \"communities\",\r\n        \"pageTo\": \"inventory\"\r\n      }\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/accept-log",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"accept-log"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OnePost",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "asdf",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "username",
+								"value": "\"asdf\"",
+								"type": "text"
+							},
+							{
+								"key": "password",
+								"value": "\"pass\"",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userId\": \"user1\",\r\n  \"sessionId\": \"session1\",\r\n  \"actions\": [\r\n    {\r\n      \"time\": \"2019-10-18T21:37:28-06:00\",\r\n      \"type\": \"CLICK\",\r\n      \"properties\": {\r\n        \"locationX\": 52,\r\n        \"locationY\": 11\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2017-10-18T21:37:30-06:00\",\r\n      \"type\": \"VIEW\",\r\n      \"properties\": {\r\n        \"viewedId\": \"FDJKLHSLD\"\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2016-10-18T21:37:30-06:00\",\r\n      \"type\": \"NAVIGATE\",\r\n      \"properties\": {\r\n        \"pageFrom\": \"communities\",\r\n        \"pageTo\": \"inventory\"\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2015-10-18T21:37:28-06:00\",\r\n      \"type\": \"CLICK\",\r\n      \"properties\": {\r\n        \"locationX\": 52,\r\n        \"locationY\": 11\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2018-10-18T21:37:28-06:00\",\r\n      \"type\": \"CLICK\",\r\n      \"properties\": {\r\n        \"locationX\": 52,\r\n        \"locationY\": 11\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2018-10-19T21:37:28-06:00\",\r\n      \"type\": \"CLICK\",\r\n      \"properties\": {\r\n        \"locationX\": 52,\r\n        \"locationY\": 11\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2018-11-18T21:39:28-06:00\",\r\n      \"type\": \"CLICK\",\r\n      \"properties\": {\r\n        \"locationX\": 52,\r\n        \"locationY\": 11\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2018-10-18T21:40:28-06:00\",\r\n      \"type\": \"CLICK\",\r\n      \"properties\": {\r\n        \"locationX\": 52,\r\n        \"locationY\": 11\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2018-10-18T21:37:28-06:00\",\r\n      \"type\": \"CLICK\",\r\n      \"properties\": {\r\n        \"locationX\": 52,\r\n        \"locationY\": 11\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2018-10-18T21:37:28-06:00\",\r\n      \"type\": \"CLICK\",\r\n      \"properties\": {\r\n        \"locationX\": 52,\r\n        \"locationY\": 11\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2018-10-18T21:37:28-06:00\",\r\n      \"type\": \"CLICK\",\r\n      \"properties\": {\r\n        \"locationX\": 52,\r\n        \"locationY\": 11\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2018-10-18T21:37:28-06:00\",\r\n      \"type\": \"CLICK\",\r\n      \"properties\": {\r\n        \"locationX\": 52,\r\n        \"locationY\": 11\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2018-10-18T21:37:28-06:00\",\r\n      \"type\": \"CLICK\",\r\n      \"properties\": {\r\n        \"locationX\": 52,\r\n        \"locationY\": 11\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2018-10-18T21:37:28-06:00\",\r\n      \"type\": \"CLICK\",\r\n      \"properties\": {\r\n        \"locationX\": 52,\r\n        \"locationY\": 11\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2018-10-18T21:37:28-06:00\",\r\n      \"type\": \"CLICK\",\r\n      \"properties\": {\r\n        \"locationX\": 52,\r\n        \"locationY\": 11\r\n      }\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/accept-log",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"accept-log"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TwoPost",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "asdf",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "username",
+								"type": "text",
+								"value": "\"asdf\""
+							},
+							{
+								"key": "password",
+								"type": "text",
+								"value": "\"pass\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userId\": \"user2\",\r\n  \"sessionId\": \"session2\",\r\n  \"actions\": [\r\n    {\r\n      \"time\": \"2019-10-18T21:37:28-06:00\",\r\n      \"type\": \"CLICK\",\r\n      \"properties\": {\r\n        \"locationX\": 52,\r\n        \"locationY\": 11\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2017-10-18T21:37:30-06:00\",\r\n      \"type\": \"VIEW\",\r\n      \"properties\": {\r\n        \"viewedId\": \"FDJKLHSLD\"\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2016-10-18T21:37:30-06:00\",\r\n      \"type\": \"NAVIGATE\",\r\n      \"properties\": {\r\n        \"pageFrom\": \"communities\",\r\n        \"pageTo\": \"inventory\"\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2015-10-18T21:37:28-06:00\",\r\n      \"type\": \"CLICK\",\r\n      \"properties\": {\r\n        \"locationX\": 52,\r\n        \"locationY\": 11\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2018-10-18T21:37:28-06:00\",\r\n      \"type\": \"CLICK\",\r\n      \"properties\": {\r\n        \"locationX\": 52,\r\n        \"locationY\": 11\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2018-10-19T21:37:28-06:00\",\r\n      \"type\": \"CLICK\",\r\n      \"properties\": {\r\n        \"locationX\": 52,\r\n        \"locationY\": 11\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2018-11-18T21:39:28-06:00\",\r\n      \"type\": \"CLICK\",\r\n      \"properties\": {\r\n        \"locationX\": 52,\r\n        \"locationY\": 11\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2018-10-18T21:40:28-06:00\",\r\n      \"type\": \"CLICK\",\r\n      \"properties\": {\r\n        \"locationX\": 52,\r\n        \"locationY\": 11\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2018-10-18T21:37:28-06:00\",\r\n      \"type\": \"CLICK\",\r\n      \"properties\": {\r\n        \"locationX\": 52,\r\n        \"locationY\": 11\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2018-10-18T21:37:28-06:00\",\r\n      \"type\": \"CLICK\",\r\n      \"properties\": {\r\n        \"locationX\": 52,\r\n        \"locationY\": 11\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2018-10-18T21:37:28-06:00\",\r\n      \"type\": \"CLICK\",\r\n      \"properties\": {\r\n        \"locationX\": 52,\r\n        \"locationY\": 11\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2018-10-18T21:37:29-06:00\",\r\n      \"type\": \"CLICK\",\r\n      \"properties\": {\r\n        \"locationX\": 52,\r\n        \"locationY\": 11\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2018-10-18T21:37:28-06:00\",\r\n      \"type\": \"CLICK\",\r\n      \"properties\": {\r\n        \"locationX\": 52,\r\n        \"locationY\": 11\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2018-10-18T21:37:28-06:00\",\r\n      \"type\": \"CLICK\",\r\n      \"properties\": {\r\n        \"locationX\": 52,\r\n        \"locationY\": 11\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2018-10-18T21:37:28-06:00\",\r\n      \"type\": \"CLICK\",\r\n      \"properties\": {\r\n        \"locationX\": 52,\r\n        \"locationY\": 11\r\n      }\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/accept-log",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"accept-log"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Time",
+			"item": [
+				{
+					"name": "Time Range 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/logs/timerange/2017-10-18T21:37:30-06:00/2018-12-18T21:37:30-06:00",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"logs",
+								"timerange",
+								"2017-10-18T21:37:30-06:00",
+								"2018-12-18T21:37:30-06:00"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Time Range 1 with one user1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/logs/userid/user1/timerange/2017-10-18T21:37:30-06:00/2018-12-18T21:37:30-06:00",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"logs",
+								"userid",
+								"user1",
+								"timerange",
+								"2017-10-18T21:37:30-06:00",
+								"2018-12-18T21:37:30-06:00"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Time Range 1 with one type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/logs/type/Test/timerange/2017-10-18T21:37:30-06:00/2018-12-18T21:37:30-06:00",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"logs",
+								"type",
+								"Test",
+								"timerange",
+								"2017-10-18T21:37:30-06:00",
+								"2018-12-18T21:37:30-06:00"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Time Range 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/logs/timerange/2019-10-18T21:37:27-06:00/2020-12-18T21:37:30-06:00",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"logs",
+								"timerange",
+								"2019-10-18T21:37:27-06:00",
+								"2020-12-18T21:37:30-06:00"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Time Post",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "asdf",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "username",
+								"type": "text",
+								"value": "\"asdf\""
+							},
+							{
+								"key": "password",
+								"type": "text",
+								"value": "\"pass\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userId\": \"user2\",\r\n  \"sessionId\": \"session2\",\r\n  \"actions\": [\r\n    {\r\n      \"time\": \"2019-10-18T21:37:28-06:00\",\r\n      \"type\": \"CLICK\",\r\n      \"properties\": {\r\n        \"locationX\": 52,\r\n        \"locationY\": 11\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2018-10-18T21:37:30-06:00\",\r\n      \"type\": \"Test\",\r\n      \"properties\": {\r\n        \"viewedId\": \"FDJKLHSLD\"\r\n      }\r\n    }\r\n    \r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/accept-log",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"accept-log"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Time Post 2",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "asdf",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "username",
+								"type": "text",
+								"value": "\"asdf\""
+							},
+							{
+								"key": "password",
+								"type": "text",
+								"value": "\"pass\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userId\": \"user1\",\r\n  \"sessionId\": \"session1\",\r\n  \"actions\": [\r\n    {\r\n      \"time\": \"2017-10-18T21:37:30-06:00\",\r\n      \"type\": \"VIEW\",\r\n      \"properties\": {\r\n        \"viewedId\": \"FDJKLHSLD\"\r\n      }\r\n    },\r\n    {\r\n      \"time\": \"2016-10-18T21:37:30-06:00\",\r\n      \"type\": \"VIEW\",\r\n      \"properties\": {\r\n        \"viewedId\": \"FDJKLHSLD\"\r\n      }\r\n    }\r\n    \r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/accept-log",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"accept-log"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "All Logs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/all-logs",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"all-logs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User and Type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/logs/userid/user1/type/VIEW",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"logs",
+						"userid",
+						"user1",
+						"type",
+						"VIEW"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Same Time Multiple Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/logs/time/2019-10-18T21:37:28-06:0",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"logs",
+						"time",
+						"2019-10-18T21:37:28-06:0"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
